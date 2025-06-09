@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #333;
+  --heading-color: #222;
+  --card-bg: #fff;
+  --card-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ddd;
+  --heading-color: #eee;
+  --card-bg: #1e1e1e;
+  --card-shadow: 0 2px 10px rgba(0,0,0,0.8);
+}
+
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.project-info {
+  background: var(--card-bg);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sensor-data {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sensor-data li {
+  background: var(--card-bg);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+  display: flex;
+  align-items: center;
+}
+
+.sensor-data li:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.status-indicator.green {
+  background-color: #4caf50;
+  box-shadow: 0 0 8px #4caf50aa;
+}
+
+.status-indicator.orange {
+  background-color: #ff9800;
+  box-shadow: 0 0 8px #ff9800aa;
+}
+
+.status-indicator.red {
+  background-color: #f44336;
+  box-shadow: 0 0 8px #f44336aa;
+}
+
+.chart-section {
+  margin-top: 2rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.mini-chart {
+  background: var(--card-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-chart h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: var(--heading-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .sensor-data {
+    grid-template-columns: 1fr;
+  }
+}
+
