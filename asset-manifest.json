@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Sporecast/static/css/main.491b3fb8.css",
+    "main.js": "/Sporecast/static/js/main.a8db9e51.js",
+    "static/js/453.b562aeed.chunk.js": "/Sporecast/static/js/453.b562aeed.chunk.js",
+    "index.html": "/Sporecast/index.html",
+    "main.491b3fb8.css.map": "/Sporecast/static/css/main.491b3fb8.css.map",
+    "main.a8db9e51.js.map": "/Sporecast/static/js/main.a8db9e51.js.map",
+    "453.b562aeed.chunk.js.map": "/Sporecast/static/js/453.b562aeed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.491b3fb8.css",
+    "static/js/main.a8db9e51.js"
+  ]
+}
